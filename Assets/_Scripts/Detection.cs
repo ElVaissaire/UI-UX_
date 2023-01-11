@@ -31,6 +31,7 @@ public class Detection : MonoBehaviour
             if (hit.collider.gameObject.tag == "Player")
             {
                 Debug.Log("Coulé");
+
             }
             else
             {
