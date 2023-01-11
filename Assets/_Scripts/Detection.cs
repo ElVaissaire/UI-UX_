@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class Detection : MonoBehaviour
 {
-    [SerializeField] private GameObject player;
-    [SerializeField] private GameObject EnemiesLight;
+    [SerializeField] private GameObject Player;
+    [SerializeField] private GameObject RobotLight;
 
     // Start is called before the first frame update
     void Start()
@@ -21,7 +21,7 @@ public class Detection : MonoBehaviour
 
     void OnTriggerEnter(Collider other) 
     {
-        Vector3 direction = (player.transform.position - EnemiesLight.transform.position).normalized;
+        Vector3 direction = (Player.transform.position - RobotLight.transform.position).normalized;
         Ray ray = new Ray(transform.position, direction);
 
         RaycastHit hit;
@@ -30,7 +30,7 @@ public class Detection : MonoBehaviour
 
         if (Physics.Raycast( ray, out hit))
         {
-            if (hit.collider.gameObject.tag == "player")
+            if (hit.collider.gameObject.tag == "Player")
             {
                 Debug.Log("Coulé");
             }

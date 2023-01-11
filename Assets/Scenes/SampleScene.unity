@@ -178,6 +178,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 7616067890236478574, guid: e04baeb6419b0e64291faef8bf2c139e, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e04baeb6419b0e64291faef8bf2c139e, type: 3}
 --- !u!1 &149758308 stripped
@@ -556,6 +560,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 650462440779285288, guid: 68460ae823893e84eabd71d8b11dac55, type: 3}
+      propertyPath: m_Name
+      value: Robot Light
+      objectReference: {fileID: 0}
     - target: {fileID: 2702954061509575165, guid: 68460ae823893e84eabd71d8b11dac55, type: 3}
       propertyPath: m_Name
       value: RobotFinal
