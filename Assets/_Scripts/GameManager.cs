@@ -14,6 +14,8 @@ public class GameManager : MonoBehaviour
     [SerializeField] private GameObject robotButtonRetry;
     [SerializeField] private GameObject robotButtonQuit;
     [SerializeField] private TextMeshProUGUI remainingTimeText;
+    [SerializeField] private Transform startingPoint;
+    [SerializeField] private Transform player;
     
     private void Awake()
     {
@@ -23,6 +25,7 @@ public class GameManager : MonoBehaviour
         Instance = this;
 
         ExitZone.OnFinished += Finish;
+        Detection.OnFound += Found;
     }
     // Start is called before the first frame update
     void Start()
@@ -56,5 +59,11 @@ public class GameManager : MonoBehaviour
 
         //ne plus se téléporter
         antiTeleport.SetActive(true);
+    }
+
+    private void Found()
+    {
+        print("teleportation of player");
+        player.position = startingPoint.position;
     }
 }
