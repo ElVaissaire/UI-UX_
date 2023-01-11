@@ -1,13 +1,19 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
+    public bool isFinished = false;
+    public Timer timer;
 
     [SerializeField] private GameObject antiTeleport;
     [SerializeField] private GameObject finalCanvas;
+    [SerializeField] private GameObject robotButtonRetry;
+    [SerializeField] private GameObject robotButtonQuit;
+    [SerializeField] private TextMeshProUGUI remainingTimeText;
     
     private void Awake()
     {
@@ -33,9 +39,20 @@ public class GameManager : MonoBehaviour
     private void Finish()
     {
         print("game is finished");
+        isFinished = true;
+
+        float minutes = timer.minutes;
+        float seconds = timer.seconds;
+        float centiseconds = timer.centiseconds;
+
+        //récupérer le timer score
+        remainingTimeText.text = string.Format("{0:00}:{1:00}:{2:00}", minutes, seconds, centiseconds);
+
         //faire apparaître un canva avec le score
         //proposer de rejouer etc...
         finalCanvas.SetActive(true);
+        robotButtonRetry.SetActive(true);
+        robotButtonQuit.SetActive(true);
 
         //ne plus se téléporter
         antiTeleport.SetActive(true);
