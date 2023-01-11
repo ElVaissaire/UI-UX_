@@ -797,15 +797,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 650462440779285290, guid: 68460ae823893e84eabd71d8b11dac55, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.00012
+      value: -0.00011
       objectReference: {fileID: 0}
     - target: {fileID: 650462440779285290, guid: 68460ae823893e84eabd71d8b11dac55, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.00271
+      value: 0.00181
       objectReference: {fileID: 0}
     - target: {fileID: 650462440779285290, guid: 68460ae823893e84eabd71d8b11dac55, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.00007
+      value: -0.0001
       objectReference: {fileID: 0}
     - target: {fileID: 704683389949957895, guid: 68460ae823893e84eabd71d8b11dac55, type: 3}
       propertyPath: m_Layer
@@ -1135,7 +1135,7 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 4.5
+  m_Radius: 4
   m_Center: {x: 0, y: 0, z: 3.12}
 --- !u!114 &1160009927
 MonoBehaviour:
