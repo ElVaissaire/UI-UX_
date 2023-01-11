@@ -26,8 +26,6 @@ public class Detection : MonoBehaviour
 
         RaycastHit hit;
 
-        Debug.Log("Touché");
-
         if (Physics.Raycast( ray, out hit))
         {
             if (hit.collider.gameObject.tag == "Player")
