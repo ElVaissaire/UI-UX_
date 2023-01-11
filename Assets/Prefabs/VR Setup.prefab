@@ -52,7 +52,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 9479172ee4d9cc741841f250f96437eb, type: 2}
+  - {fileID: 2100000, guid: daafbc0bd27bdab4196423deac9ecd91, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1141,7 +1141,7 @@ GameObject:
   - component: {fileID: 1105557623774278735}
   - component: {fileID: 1105557623774278731}
   - component: {fileID: 1105557623774278728}
-  - component: {fileID: 1105557623774278729}
+  - component: {fileID: 997964512340089911}
   m_Layer: 0
   m_Name: RightHand Controller
   m_TagString: Untagged
@@ -1433,7 +1433,7 @@ MonoBehaviour:
   m_PlayHapticsOnHoverCanceled: 0
   m_HapticHoverCancelIntensity: 0
   m_HapticHoverCancelDuration: 0
---- !u!135 &1105557623774278729
+--- !u!135 &997964512340089911
 SphereCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1441,10 +1441,10 @@ SphereCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1105557623774278734}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.15
+  m_Radius: 0.1
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1105557623814369423
 GameObject:
@@ -1717,7 +1717,7 @@ GameObject:
   - component: {fileID: 1105557624886963287}
   - component: {fileID: 1105557624886963283}
   - component: {fileID: 1105557624886963280}
-  - component: {fileID: 1105557624886963281}
+  - component: {fileID: 6993519234312466127}
   m_Layer: 0
   m_Name: LeftHand Controller
   m_TagString: Untagged
@@ -2010,7 +2010,7 @@ MonoBehaviour:
   m_PlayHapticsOnHoverCanceled: 0
   m_HapticHoverCancelIntensity: 0
   m_HapticHoverCancelDuration: 0
---- !u!135 &1105557624886963281
+--- !u!135 &6993519234312466127
 SphereCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2018,10 +2018,10 @@ SphereCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1105557624886963286}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.15
+  m_Radius: 0.1
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1105557625197671410
 GameObject:
@@ -2426,7 +2426,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 9479172ee4d9cc741841f250f96437eb, type: 2}
+  - {fileID: 2100000, guid: daafbc0bd27bdab4196423deac9ecd91, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3356,7 +3356,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5381515592517309974}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.0928, y: 0, z: -0.1812}
+  m_LocalPosition: {x: -0.0885, y: 0, z: -0.1989}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
