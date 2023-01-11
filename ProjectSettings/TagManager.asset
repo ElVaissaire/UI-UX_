@@ -15,8 +15,8 @@ TagManager:
   - 
   - Water
   - UI
-  - LeftHand Physics
-  - RightHand Physics
+  - RobotPhysics
+  - Player
   - Teleporter
   - 
   - 
