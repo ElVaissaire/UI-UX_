@@ -77,8 +77,10 @@ public class GameManager : MonoBehaviour
         Found();
         timer.RestartTimer();
         isPlaying = false;
+        isFinished = false;
         robotButtonStart.SetActive(true);
         gameOver.SetActive(false);
+        final.SetActive(false);
     }
 
     public void RobotQuit()

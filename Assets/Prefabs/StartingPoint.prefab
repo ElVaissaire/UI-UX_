@@ -27,7 +27,7 @@ RectTransform:
   m_GameObject: {fileID: 632515483749211017}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.4, y: 0.2, z: 0.3}
+  m_LocalScale: {x: 0.3, y: 0.2, z: 0.2}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4616036293615999782}
@@ -35,8 +35,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 1.65}
-  m_SizeDelta: {x: 0, y: -3.3}
+  m_AnchoredPosition: {x: 0, y: 1.75}
+  m_SizeDelta: {x: 0, y: -3.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7893505471759794508
 CanvasRenderer:
@@ -201,8 +201,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 0.2
-  m_fontSizeBase: 0.2
+  m_fontSize: 0.1
+  m_fontSizeBase: 0.1
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -352,6 +352,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1874209677766284487}
     m_Modifications:
+    - target: {fileID: 847568811233514584, guid: f8d12d5bcaa46dc4e99b810621e9407b, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 7339218548741346825, guid: f8d12d5bcaa46dc4e99b810621e9407b, type: 3}
       propertyPath: m_Name
       value: RobotButtonStart
