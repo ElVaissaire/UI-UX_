@@ -5379,7 +5379,7 @@ GameObject:
   - component: {fileID: 1203753507612669035}
   m_Layer: 0
   m_Name: RobotButtonQuit
-  m_TagString: Untagged
+  m_TagString: RobotQuit
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5485,7 +5485,7 @@ GameObject:
   - component: {fileID: 4615280725459396798}
   m_Layer: 0
   m_Name: RobotButtonRetry
-  m_TagString: Untagged
+  m_TagString: RobotRetry
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

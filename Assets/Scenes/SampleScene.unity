@@ -182,6 +182,14 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8461897619982885472, guid: 910794f5a53736b41861fb8e4c0f6e30, type: 3}
+      propertyPath: m_TagString
+      value: RobotQuit
+      objectReference: {fileID: 0}
+    - target: {fileID: 8610227742997510475, guid: 910794f5a53736b41861fb8e4c0f6e30, type: 3}
+      propertyPath: m_TagString
+      value: RobotRetry
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 910794f5a53736b41861fb8e4c0f6e30, type: 3}
 --- !u!1 &149758308 stripped
