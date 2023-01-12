@@ -6,7 +6,7 @@ public class Robot : MonoBehaviour
 {
     public Transform[] waypoints;
     private int currentWaypointIndex = 0;
-    private float speed = 2f;
+    private float speed = 3f;
 
     private float waitTime = 1f;
     private float waitCounter = 0f;
