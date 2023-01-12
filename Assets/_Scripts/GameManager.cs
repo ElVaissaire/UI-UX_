@@ -13,8 +13,10 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] private GameObject antiTeleport;
     [SerializeField] private GameObject final;
+    [SerializeField] private GameObject gameOver;
     [SerializeField] private GameObject robotButtonRetry;
     [SerializeField] private GameObject robotButtonQuit;
+    [SerializeField] private GameObject robotButtonStart;
     [SerializeField] private TextMeshProUGUI remainingTimeText;
     [SerializeField] private Transform startingPoint;
     [SerializeField] private Transform player;
@@ -28,6 +30,7 @@ public class GameManager : MonoBehaviour
 
         ExitZone.OnFinished += Finish;
         Detection.OnFound += Found;
+        Timer.OnTimeFinished += GameOver;
     }
     // Start is called before the first frame update
     void Start()
@@ -55,6 +58,8 @@ public class GameManager : MonoBehaviour
 
         //faire apparaître un canva avec le score
         //proposer de rejouer etc...
+        Vector3 canvasPosition = (player.transform.forward * 1.5f) + player.transform.position;
+        final.transform.position = canvasPosition;
         final.SetActive(true);
         // + faire apparaître le canvas face au joueur
 
@@ -73,7 +78,11 @@ public class GameManager : MonoBehaviour
 
     public void RobotRetry()
     {
-        SceneManager.LoadScene("SampleScene");
+        //SceneManager.LoadScene("SampleScene");
+        Found();
+        timer.RestartTimer();
+        isPlaying = false;
+        robotButtonStart.SetActive(true);
     }
 
     public void RobotQuit()
@@ -86,5 +95,14 @@ public class GameManager : MonoBehaviour
         //print("start game");
         isPlaying = true;
         antiTeleport.SetActive(false);
+    }
+
+    private void GameOver()
+    {
+        Vector3 canvasPosition = (player.transform.forward * 1.5f) + player.transform.position;
+        gameOver.transform.position = canvasPosition;
+        gameOver.SetActive(true);
+
+        antiTeleport.SetActive(true);
     }
 }
