@@ -12,7 +12,7 @@ public class GameManager : MonoBehaviour
     public Timer timer;
 
     [SerializeField] private GameObject antiTeleport;
-    [SerializeField] private GameObject finalCanvas;
+    [SerializeField] private GameObject final;
     [SerializeField] private GameObject robotButtonRetry;
     [SerializeField] private GameObject robotButtonQuit;
     [SerializeField] private TextMeshProUGUI remainingTimeText;
@@ -55,7 +55,9 @@ public class GameManager : MonoBehaviour
 
         //faire apparaître un canva avec le score
         //proposer de rejouer etc...
-        finalCanvas.SetActive(true);
+        final.SetActive(true);
+        // + faire apparaître le canvas face au joueur
+
         robotButtonRetry.SetActive(true);
         robotButtonQuit.SetActive(true);
 

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028334, g: 0.2257134, b: 0.30692226, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2622,12 +2622,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isFinished: 0
+  isPlaying: 0
   timer: {fileID: 1882711631}
   antiTeleport: {fileID: 0}
   finalCanvas: {fileID: 935323986}
   robotButtonRetry: {fileID: 7478574545036894706}
   robotButtonQuit: {fileID: 2110106833}
   remainingTimeText: {fileID: 1485265786}
+  startingPoint: {fileID: 0}
+  player: {fileID: 0}
 --- !u!4 &1792258818
 Transform:
   m_ObjectHideFlags: 0
@@ -3008,6 +3011,63 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1ece8ec5444de7d468f4e5f2893ba691, type: 3}
+--- !u!1001 &1874209679104861728
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1874209677766284486, guid: d0ad58e5fa782a8488bd43a9be42af2d, type: 3}
+      propertyPath: m_Name
+      value: StartingPoint
+      objectReference: {fileID: 0}
+    - target: {fileID: 1874209677766284487, guid: d0ad58e5fa782a8488bd43a9be42af2d, type: 3}
+      propertyPath: m_RootOrder
+      value: 23
+      objectReference: {fileID: 0}
+    - target: {fileID: 1874209677766284487, guid: d0ad58e5fa782a8488bd43a9be42af2d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -18.91
+      objectReference: {fileID: 0}
+    - target: {fileID: 1874209677766284487, guid: d0ad58e5fa782a8488bd43a9be42af2d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1874209677766284487, guid: d0ad58e5fa782a8488bd43a9be42af2d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 3.24
+      objectReference: {fileID: 0}
+    - target: {fileID: 1874209677766284487, guid: d0ad58e5fa782a8488bd43a9be42af2d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1874209677766284487, guid: d0ad58e5fa782a8488bd43a9be42af2d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1874209677766284487, guid: d0ad58e5fa782a8488bd43a9be42af2d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1874209677766284487, guid: d0ad58e5fa782a8488bd43a9be42af2d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1874209677766284487, guid: d0ad58e5fa782a8488bd43a9be42af2d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1874209677766284487, guid: d0ad58e5fa782a8488bd43a9be42af2d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1874209677766284487, guid: d0ad58e5fa782a8488bd43a9be42af2d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d0ad58e5fa782a8488bd43a9be42af2d, type: 3}
 --- !u!1001 &3073527352562671708
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3076,6 +3136,14 @@ PrefabInstance:
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3073527353474681102, guid: c5075ce2c58ebe048a92d05bf4fd8a0f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5579510492126380462, guid: c5075ce2c58ebe048a92d05bf4fd8a0f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5727867020601186949, guid: c5075ce2c58ebe048a92d05bf4fd8a0f, type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
