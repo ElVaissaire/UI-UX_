@@ -2201,6 +2201,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7967418381464751283}
   - component: {fileID: 5500251733270834454}
+  - component: {fileID: 5956940402069932028}
   m_Layer: 0
   m_Name: RobotButton
   m_TagString: Untagged
@@ -2239,6 +2240,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.001, y: 0.0013164259, z: 0.00042481968}
   m_Center: {x: -2.9114534e-13, y: 0.00078714517, z: 0.000010951668}
+--- !u!114 &5956940402069932028
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7339218548741346825}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d03b5e6783094b449efba2cece1f3bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7370027258928185540
 GameObject:
   m_ObjectHideFlags: 0

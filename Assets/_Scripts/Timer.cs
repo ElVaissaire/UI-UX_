@@ -16,7 +16,7 @@ public class Timer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (timeValue > 0 && !GameManager.Instance.isFinished)
+        if (timeValue > 0 && !GameManager.Instance.isFinished && GameManager.Instance.isPlaying)
         {
             timeValue -= Time.deltaTime;
         }
