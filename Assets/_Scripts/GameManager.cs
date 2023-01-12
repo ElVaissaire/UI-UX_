@@ -14,8 +14,6 @@ public class GameManager : MonoBehaviour
     [SerializeField] private GameObject antiTeleport;
     [SerializeField] private GameObject final;
     [SerializeField] private GameObject gameOver;
-    [SerializeField] private GameObject robotButtonRetry;
-    [SerializeField] private GameObject robotButtonQuit;
     [SerializeField] private GameObject robotButtonStart;
     [SerializeField] private TextMeshProUGUI remainingTimeText;
     [SerializeField] private Transform startingPoint;
@@ -35,7 +33,7 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-       
+        player.position = startingPoint.position;
     }
 
     // Update is called once per frame
@@ -63,9 +61,6 @@ public class GameManager : MonoBehaviour
         final.SetActive(true);
         // + faire apparaître le canvas face au joueur
 
-        robotButtonRetry.SetActive(true);
-        robotButtonQuit.SetActive(true);
-
         //ne plus se téléporter
         antiTeleport.SetActive(true);
     }
@@ -83,6 +78,7 @@ public class GameManager : MonoBehaviour
         timer.RestartTimer();
         isPlaying = false;
         robotButtonStart.SetActive(true);
+        gameOver.SetActive(false);
     }
 
     public void RobotQuit()
