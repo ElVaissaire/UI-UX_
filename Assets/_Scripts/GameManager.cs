@@ -2,11 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
     public bool isFinished = false;
+    public bool isPlaying = false;
     public Timer timer;
 
     [SerializeField] private GameObject antiTeleport;
@@ -65,5 +67,22 @@ public class GameManager : MonoBehaviour
     {
         print("teleportation of player");
         player.position = startingPoint.position;
+    }
+
+    public void RobotRetry()
+    {
+        SceneManager.LoadScene("SampleScene");
+    }
+
+    public void RobotQuit()
+    {
+        Application.Quit();
+    }
+
+    public void RobotStart()
+    {
+        //print("start game");
+        isPlaying = true;
+        antiTeleport.SetActive(false);
     }
 }

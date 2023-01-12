@@ -8,6 +8,9 @@ TagManager:
   - Ground
   - RobotLight
   - HideOut
+  - RobotRetry
+  - RobotQuit
+  - RobotStart
   layers:
   - Default
   - TransparentFX
