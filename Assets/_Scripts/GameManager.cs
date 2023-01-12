@@ -56,10 +56,10 @@ public class GameManager : MonoBehaviour
 
         //faire apparaître un canva avec le score
         //proposer de rejouer etc...
+        // + faire apparaître le canvas face au joueur
         Vector3 canvasPosition = (player.transform.forward * 1.5f) + player.transform.position;
         final.transform.position = canvasPosition;
         final.SetActive(true);
-        // + faire apparaître le canvas face au joueur
 
         //ne plus se téléporter
         antiTeleport.SetActive(true);
