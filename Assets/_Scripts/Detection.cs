@@ -7,8 +7,17 @@ public class Detection : MonoBehaviour
     [SerializeField] private GameObject Player;
     [SerializeField] private GameObject RobotLight;
 
-    public delegate void FoundAction();
-    public static event FoundAction OnFound;
+    // Start is called before the first frame update
+    void Start()
+    {
+        
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
 
     void OnTriggerEnter(Collider other) 
     {
@@ -22,7 +31,7 @@ public class Detection : MonoBehaviour
             if (hit.collider.gameObject.tag == "Player")
             {
                 Debug.Log("Coulé");
-                OnFound();
+
             }
             else
             {
